@@ -51,6 +51,7 @@
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace pref="125" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lbCps" min="-2" max="-2" attributes="0"/>
                       <Component id="lbCookiesTotal" min="-2" pref="227" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <Component id="btCookie" min="-2" max="-2" attributes="0"/>
@@ -104,7 +105,9 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="lbCookiesTotal" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="42" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="lbCps" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="54" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -219,6 +222,13 @@
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
             <Property name="text" type="java.lang.String" value="Cookies por clique"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbCps">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Cookies por segundo (aprox.): &quot; + (autoclickerTotal / 5)" type="code"/>
+            </Property>
           </Properties>
         </Component>
       </SubComponents>

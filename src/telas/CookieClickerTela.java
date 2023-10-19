@@ -53,6 +53,7 @@ public class CookieClickerTela extends javax.swing.JFrame {
         btReset = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        lbCps = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -112,6 +113,8 @@ public class CookieClickerTela extends javax.swing.JFrame {
 
         jLabel3.setText("Cookies por clique");
 
+        lbCps.setText("Cookies por segundo (aprox.): " + (autoclickerTotal / 5));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -127,6 +130,7 @@ public class CookieClickerTela extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(125, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lbCps)
                     .addComponent(lbCookiesTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(btCookie)
@@ -173,7 +177,9 @@ public class CookieClickerTela extends javax.swing.JFrame {
                         .addComponent(btReset)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbCookiesTotal)
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lbCps)
+                .addContainerGap(54, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -237,6 +243,10 @@ public class CookieClickerTela extends javax.swing.JFrame {
             
             //Salvar timer no array para cancelar depois
             timers.add(timer);
+            
+            
+            
+            lbCps.setText("Cookies por segundo (aprox.): " + (autoclickerTotal / 5));
         }
         
         
@@ -267,6 +277,8 @@ public class CookieClickerTela extends javax.swing.JFrame {
             for (Timer timer : timers) {
                 timer.cancel();
             }
+            
+            lbCps.setText("Cookies por segundo (aprox.): " + (autoclickerTotal / 5));
             
             
     }//GEN-LAST:event_btResetActionPerformed
@@ -322,6 +334,7 @@ public class CookieClickerTela extends javax.swing.JFrame {
     private javax.swing.JLabel lbCookiesTotal;
     private javax.swing.JLabel lbCpcPreco;
     private javax.swing.JLabel lbCpcTotal;
+    private javax.swing.JLabel lbCps;
     private javax.swing.JLabel lbTitle;
     // End of variables declaration//GEN-END:variables
 }
