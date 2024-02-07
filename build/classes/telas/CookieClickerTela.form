@@ -44,11 +44,6 @@
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="206" max="-2" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="1" attributes="0">
                   <EmptySpace pref="125" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="lbCps" min="-2" max="-2" attributes="0"/>
@@ -67,6 +62,10 @@
                               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                               <Component id="lbCpcPreco" min="-2" max="-2" attributes="0"/>
                           </Group>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
@@ -124,9 +123,6 @@
         </Component>
         <Component class="javax.swing.JButton" name="btCookie">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/telas/images.jpg"/>
             </Property>
@@ -151,7 +147,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Clique no cookie para fazer novos cookies!"/>
+            <Property name="text" type="java.lang.String" value="Clique no cookie para fazer novos cookies! Testando Git"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lbCookiesTotal">

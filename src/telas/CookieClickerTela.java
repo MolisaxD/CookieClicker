@@ -61,7 +61,6 @@ public class CookieClickerTela extends javax.swing.JFrame {
         lbTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbTitle.setText("Cookie Clicker");
 
-        btCookie.setBackground(new java.awt.Color(255, 255, 255));
         btCookie.setIcon(new javax.swing.ImageIcon(getClass().getResource("/telas/images.jpg"))); // NOI18N
         btCookie.setAlignmentY(0.0F);
         btCookie.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -75,7 +74,7 @@ public class CookieClickerTela extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("Clique no cookie para fazer novos cookies!");
+        jLabel1.setText("Clique no cookie para fazer novos cookies! Testando Git");
 
         lbCookiesTotal.setText("Cookies: " + cookiesTotal);
 
@@ -124,10 +123,6 @@ public class CookieClickerTela extends javax.swing.JFrame {
                 .addComponent(lbTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(206, 206, 206))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(125, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lbCps)
@@ -144,7 +139,10 @@ public class CookieClickerTela extends javax.swing.JFrame {
                             .addComponent(lbCpcTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lbAutoPreco)
                             .addComponent(jLabel2)
-                            .addComponent(lbCpcPreco))))
+                            .addComponent(lbCpcPreco)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(80, 80, 80)))
                 .addGap(77, 77, 77))
         );
         jPanel1Layout.setVerticalGroup(
